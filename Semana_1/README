@@ -1,0 +1,13 @@
+echo "# Ejercicios de NumPy - Aprendizaje Automático
+
+Este repositorio contiene ejercicios prácticos de la materia Aprendizaje Automático, utilizando la librería NumPy.
+
+## Contenido
+- Semana1/Ejercicios_Num.py: ejercicios iniciales de arrays, matrices y operaciones básicas.
+
+## Requisitos
+- Python 3.x
+- Librería NumPy instalada (pip install numpy)
+
+## Objetivo
+Practicar manipulación de datos numéricos y operaciones matriciales con NumPy." > README.md
