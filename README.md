@@ -1,14 +1,14 @@
-# Miner-a-de-Datos-2026
 # Semana 1 - Minería de Datos
 
 ## Temas vistos
-- Introducción a Python
-- NumPy
-- Pandas básico
+- Tipos de datos: estructurados, no estructurados y semiestructurados.
+- Limpieza de datos: valores faltantes, inconsistencias y outliers.
+- Transformación de datos: codificación ordinal y One-Hot Encoding.
+- Introducción al análisis exploratorio (EDA).
 
 ## Ejercicios
-- mineria_datos_intro.ipynb
-- arrays_numpy.ipynb
+- [Encuentro 1](Encuentro_1/README.md): limpieza y transformación de datos.
+- Encuentro 2: pendiente de subir.
 
-## Datos utilizados
-- dataset_clientes.csv
+## Objetivo
+Comprender la importancia de la calidad de los datos y aplicar técnicas básicas de limpieza y transformación en Python.
