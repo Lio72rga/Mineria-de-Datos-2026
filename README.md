@@ -2,7 +2,7 @@ README.md
 # Minería de Datos 2026
 
 ## Índice de semanas
-- [Semana 1](Semana_2/README.md)
+- [Semana 2](Semana_2/README.md)
  
 # Actividad Obligatoria - Clase 2  
 ## Limpieza, Transformación y Análisis Exploratorio de Datos
