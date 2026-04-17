@@ -1,1 +1,119 @@
+README.md
+# Minería de Datos 2026
+
+## Índice de semanas
+- [Semana 2](Semana_2/README.md)
+ 
+# Actividad Obligatoria - Clase 2  
+## Limpieza, Transformación y Análisis Exploratorio de Datos
+
+###  Materia
+Minería de Datos – 2026  
+
+###  Alumno
+### Lionel Martinez
+
+----------------------------------------------------------
+
+##  Objetivo
+Aplicar técnicas de preprocesamiento de datos, incluyendo:
+- Identificación de tipos de datos
+- Limpieza de datos
+- Transformación de variables
+- Análisis exploratorio (EDA)
+
+---
+
+##  Dataset utilizado
+
+El dataset contiene información de empleados con las siguientes variables:
+
+- ID  
+- Nombre  
+- Edad  
+- Nivel Educativo  
+- Salario  
+- Categoría  
+- Estado  
+
+---
+
+##  1. Identificación de Tipos de Datos
+
+| Variable            | Tipo de Dato        |
+|--------------------|-------------------|
+| ID                 | Numérico          |
+| Nombre             | Categórico        |
+| Edad               | Numérico          |
+| Nivel Educativo    | Categórico Ordinal|
+| Salario            | Numérico          |
+| Categoría          | Categórico        |
+| Estado             | Categórico        |
+
+---
+
+##  2. Limpieza de Datos
+
+Se realizaron las siguientes tareas:
+
+- ✔ Corrección de edad negativa (valor absoluto)
+- ✔ Imputación de valores faltantes en salario (mediana)
+- ✔ Normalización de texto en columna *Estado*
+- ✔ Eliminación de outliers en salario usando método IQR
+
+---
+
+##  3. Transformación de Datos
+
+- ✔ Codificación ordinal de **Nivel Educativo**
+- ✔ Normalización de **Salario** con MinMaxScaler
+- ✔ Creación de nueva variable:
+  
+  **Años hasta jubilación = 65 - Edad**
+
+---
+
+##  4. Análisis Exploratorio de Datos (EDA)
+
+Se realizaron:
+
+-  Estadísticas descriptivas (media, mínimo, máximo, etc.)
+-  Histograma de salarios
+-  Gráfico de dispersión (Edad vs Salario)
+
+###  Conclusiones:
+- Los salarios presentan concentración en valores medios
+- Se observa una relación positiva entre edad y salario
+- La limpieza permitió eliminar valores extremos que afectaban el análisis
+
+---
+
+##  5. Uso de LLM
+
+**Prompt utilizado:**
+> "¿Cómo detectar y eliminar outliers en Python?"
+
+**Síntesis:**
+Se pueden detectar outliers mediante métodos como IQR o Z-score.  
+En este trabajo se utilizó el método IQR por su simplicidad y efectividad para detectar valores extremos.
+
+---
+
+##  Conclusión General
+
+El preprocesamiento de datos es una etapa fundamental en minería de datos, ya que permite mejorar la calidad de la información, eliminar errores y preparar los datos para su posterior análisis o modelado.
+
+---
+
+##  Tecnologías utilizadas
+
+- Python   
+- Pandas  
+- Scikit-learn  
+- Matplotlib  
+- Google Colab  
+
+---
+
+##  Ubicación en el repositorio.
 
