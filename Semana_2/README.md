@@ -1,119 +1,83 @@
-README.md
-# Minería de Datos 2026
+Minería de Datos 2026 – Semana 2
+Alumno: Lionel A. Martinez.
 
-## Índice de semanas
-- [Semana 2](Semana_2/README.md)
- 
-# Actividad Obligatoria - Clase 2  
-## Limpieza, Transformación y Análisis Exploratorio de Datos
+Limpieza, Transformación y Análisis Exploratorio de Datos
+Descripción
 
-###  Materia
-Minería de Datos – 2026  
+En esta actividad se trabajó con un dataset de empleados que presentaba problemas comunes en proyectos de análisis de datos, como valores faltantes, inconsistencias y datos atípicos.
 
-###  Alumno
-### Lionel Martinez
+El objetivo fue aplicar técnicas de limpieza, transformación y análisis exploratorio (EDA) para mejorar la calidad de los datos y prepararlos para futuros modelos de Machine Learning.
 
-----------------------------------------------------------
+Objetivos
+Identificar tipos de datos (numéricos, categóricos, ordinales).
+Detectar y corregir errores en los datos.
+Aplicar técnicas de limpieza (faltantes, inconsistencias, outliers).
+Transformar variables categóricas en numéricas.
+Normalizar variables numéricas.
+Realizar análisis exploratorio de datos (EDA).
+Utilizar un LLM como apoyo metodológico.
+Limpieza de Datos
 
-##  Objetivo
-Aplicar técnicas de preprocesamiento de datos, incluyendo:
-- Identificación de tipos de datos
-- Limpieza de datos
-- Transformación de variables
-- Análisis exploratorio (EDA)
+Se realizaron las siguientes acciones:
 
----
+Corrección de valores inválidos en la variable Edad (valores negativos).
+Imputación de valores faltantes en Salario utilizando la mediana.
+Normalización de texto en la variable Estado (ej: "ACTIVO" → "Activo").
+Detección y eliminación de valores atípicos en Salario mediante el método IQR.
 
-##  Dataset utilizado
+Resultado: Se eliminó un outlier (salario = 200000), mejorando la consistencia del dataset.
 
-El dataset contiene información de empleados con las siguientes variables:
+Transformación de Datos
 
-- ID  
-- Nombre  
-- Edad  
-- Nivel Educativo  
-- Salario  
-- Categoría  
-- Estado  
+Se aplicaron las siguientes transformaciones:
 
----
+Codificación ordinal en la variable Nivel Educativo:
+Licenciado → 0
+Ingeniero → 1
+Doctorado → 2
+Normalización Min-Max en la variable Salario (valores entre 0 y 1).
+Creación de nueva variable:
+Años hasta jubilación = 65 - Edad
 
-##  1. Identificación de Tipos de Datos
+Estas transformaciones permiten que los datos sean utilizados en modelos de aprendizaje automático.
 
-| Variable            | Tipo de Dato        |
-|--------------------|-------------------|
-| ID                 | Numérico          |
-| Nombre             | Categórico        |
-| Edad               | Numérico          |
-| Nivel Educativo    | Categórico Ordinal|
-| Salario            | Numérico          |
-| Categoría          | Categórico        |
-| Estado             | Categórico        |
+Análisis Exploratorio de Datos (EDA)
 
----
+Se realizaron visualizaciones y análisis como:
 
-##  2. Limpieza de Datos
+Histograma de la variable Edad.
+Gráfico de dispersión entre Edad y Salario.
+Cálculo de correlación entre variables.
+Hallazgos:
+La edad presenta una distribución concentrada en valores intermedios.
+Existe una relación positiva entre edad y salario.
+No se observan valores extremos luego de la limpieza.
+Uso de LLM
 
-Se realizaron las siguientes tareas:
+Se utilizó ChatGPT como herramienta de apoyo.
 
-- ✔ Corrección de edad negativa (valor absoluto)
-- ✔ Imputación de valores faltantes en salario (mediana)
-- ✔ Normalización de texto en columna *Estado*
-- ✔ Eliminación de outliers en salario usando método IQR
+Prompt utilizado:
 
----
+"¿Cómo detectar y eliminar outliers en Python?"
 
-##  3. Transformación de Datos
+Síntesis:
+El modelo sugirió métodos como IQR y Z-score para detectar valores atípicos. Se eligió IQR por no depender de la distribución de los datos.
 
-- ✔ Codificación ordinal de **Nivel Educativo**
-- ✔ Normalización de **Salario** con MinMaxScaler
-- ✔ Creación de nueva variable:
-  
-  **Años hasta jubilación = 65 - Edad**
+Validación propia:
+El método IQR permitió identificar correctamente el valor extremo en salario (200000), el cual fue eliminado para mejorar el análisis.
 
----
+Archivos incluidos
+AO1_Clase2_Apellido_Nombre.ipynb → Notebook completo
+AO1_Clase2_Apellido_Nombre.pdf → Versión exportada
+Conclusión
 
-##  4. Análisis Exploratorio de Datos (EDA)
+El proceso de limpieza y transformación permitió mejorar significativamente la calidad del dataset.
 
-Se realizaron:
+El análisis exploratorio facilitó la comprensión de los datos y la detección de patrones relevantes, dejando el dataset preparado para futuros modelos de Machine Learning.
 
--  Estadísticas descriptivas (media, mínimo, máximo, etc.)
--  Histograma de salarios
--  Gráfico de dispersión (Edad vs Salario)
-
-###  Conclusiones:
-- Los salarios presentan concentración en valores medios
-- Se observa una relación positiva entre edad y salario
-- La limpieza permitió eliminar valores extremos que afectaban el análisis
-
----
-
-##  5. Uso de LLM
-
-**Prompt utilizado:**
-> "¿Cómo detectar y eliminar outliers en Python?"
-
-**Síntesis:**
-Se pueden detectar outliers mediante métodos como IQR o Z-score.  
-En este trabajo se utilizó el método IQR por su simplicidad y efectividad para detectar valores extremos.
-
----
-
-##  Conclusión General
-
-El preprocesamiento de datos es una etapa fundamental en minería de datos, ya que permite mejorar la calidad de la información, eliminar errores y preparar los datos para su posterior análisis o modelado.
-
----
-
-##  Tecnologías utilizadas
-
-- Python   
-- Pandas  
-- Scikit-learn  
-- Matplotlib  
-- Google Colab  
-
----
-
-##  Ubicación en el repositorio.
-
+Tecnologías utilizadas
+Python 
+Pandas
+Scikit-learn
+Seaborn / Matplotlib
+Google Colab
