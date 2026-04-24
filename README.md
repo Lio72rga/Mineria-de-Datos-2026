@@ -39,10 +39,10 @@ mineria-de-datos-2026/
 
 Cada carpeta semanal incluye:
 
-* 📄 Ejercicios prácticos
-* 📊 Datasets utilizados
-* 🧾 Resoluciones
-* 📝 Documentación específica (README)
+*  Ejercicios prácticos
+*  Datasets utilizados
+*  Resoluciones
+*  Documentación específica (README)
 
 ---
 
