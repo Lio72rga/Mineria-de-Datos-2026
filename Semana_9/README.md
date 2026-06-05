@@ -1,32 +1,46 @@
-#  Semana 9 – Árboles de Decisión
+# Semana 9 – Evaluación y Optimización de Modelos
 
-## Centro Politécnico Superior Malvinas Argentinas  
+##  Centro Politécnico Superior Malvinas Argentinas  
 **Tecnicatura en Ciencias de Datos e Inteligencia Artificial**  
-Clase 9 – Árboles de Decisión  
-Autor: Lionel Martínez  
-Fecha: Junio 2026
+**Autor:** Lionel Martínez  
+**Fecha:** Junio 2026  
 
 ---
 
 ##  Objetivo general
-Explorar el funcionamiento de los árboles de decisión y sus variantes, aplicando técnicas de evaluación, optimización y comparación de modelos.  
-Se busca comprender cómo los algoritmos de decisión estructuran la información y cómo los hiperparámetros influyen en la precisión y la generalización.
+Aplicar los conceptos de **evaluación, optimización y comparación de modelos de decisión** mediante ejercicios prácticos en Python.  
+Durante esta semana se trabajó con datasets reales y simulados para comprender cómo los hiperparámetros afectan el rendimiento y la interpretabilidad de los modelos.
 
 ---
 
-##  Contenido del repositorio
+##  Estructura de notebooks
 
-| Notebook | Tema | Descripción |
-|-----------|------|-------------|
-| **[Notebook 1 – Clasificación vs Regresión](ca://s?q=Ver_Notebook_1_Clasificacion_vs_Regresion)** | Introducción a los árboles de decisión | Diferencias entre modelos de clasificación y regresión, con ejemplos visuales y métricas básicas. |
-| **[Notebook 2 – ID3 vs CART](ca://s?q=Ver_Notebook_2_ID3_vs_CART)** | Comparación de algoritmos | Análisis gráfico y comparativo entre los criterios de división *entropy* (ID3) y *gini* (CART). |
-| **[Notebook 3 – Evaluación y Optimización](ca://s?q=Ver_Notebook_3_Evaluacion_y_Optimizacion)** | Ajuste de hiperparámetros | Aplicación de *GridSearchCV* para mejorar el rendimiento del modelo y análisis de métricas. |
-| **[Notebook 4 – Ejercicio Integrador: Riesgo Crediticio](ca://s?q=Ver_Notebook_4_Riesgo_Crediticio)** | Implementación práctica | Predicción de incumplimiento crediticio y comparación entre Árbol Optimizado y Random Forest. |
+| Notebook | Tema principal | Descripción breve |
+|-----------|----------------|-------------------|
+| **Notebook 1 – ID3 vs CART** | Comparación de algoritmos | Se entrenan y evalúan árboles de decisión con distintos criterios de división (ID3 y CART). |
+| **Notebook 2 – Evaluación y Optimización** | Optimización de hiperparámetros | Se aplica `GridSearchCV` para mejorar el rendimiento del modelo y comparar métricas antes y después de la optimización. |
+| **Notebook 3 – Diabetes** | Evaluación y optimización con dataset real | Se utiliza el dataset de diabetes para medir precisión y error, optimizando parámetros como `max_depth` y `min_samples_split`. |
+| **Notebook 4 – Ejercicio Integrador: Riesgo Crediticio** | Aplicación integradora | Se simula un caso de riesgo crediticio, se entrena un árbol de decisión, se optimiza con `GridSearchCV` y se compara con un modelo de ensamble `Random Forest`. |
+
+---
+
+##  Conceptos aplicados
+- **Entrenamiento y validación** de modelos supervisados.  
+- **Optimización de hiperparámetros** con `GridSearchCV`.  
+- **Evaluación de desempeño** mediante métricas (Accuracy, R², MSE, F1).  
+- **Visualización de árboles de decisión** y comparación de estructuras.  
+- **Interpretación de resultados** y análisis de sobreajuste.  
+- **Comparación con modelos de ensamble** (Random Forest).
 
 ---
 
 ##  Resultados destacados
+- Los modelos optimizados mostraron mejoras significativas en precisión y reducción de error.  
+- La visualización permitió identificar estructuras más compactas y generalizables.  
+- El modelo de ensamble (Random Forest) demostró mayor estabilidad y rendimiento en el caso de riesgo crediticio.  
 
-- **Modelos básicos:** permiten visualizar la estructura de decisión y entender la lógica de clasificación.  
-- **Optimización:** mejora la precisión y reduce el sobreajuste mediante ajuste de profundidad y tamaño de hojas.  
-- **Comparativos:** muestran cómo distintos criterios y algoritmos afectan la estructura y desempeño del modelo
+---
+
+##  Conclusión general
+La Semana 9 consolidó el proceso completo de **evaluación y optimización de modelos de decisión**, integrando teoría y práctica.  
+Los notebooks refle
