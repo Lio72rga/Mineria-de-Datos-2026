@@ -43,4 +43,24 @@ Durante esta semana se trabajó con datasets reales y simulados para comprender 
 
 ##  Conclusión general
 La Semana 9 consolidó el proceso completo de **evaluación y optimización de modelos de decisión**, integrando teoría y práctica.  
-Los notebooks refle
+Los notebooks reflejan un avance progresivo desde la comparación de algoritmos hasta la aplicación en un contexto realista, fortaleciendo la comprensión del ciclo de desarrollo de modelos predictivos.
+
+---
+
+##  Organización sugerida en el repositorio
+Semana_9/
+│
+├── Notebook_1_ID3_vs_CART.ipynb
+├── Notebook_2_Evaluacion_y_Optimizacion.ipynb
+├── Notebook_3_Diabetes.ipynb
+├── Notebook_4_Ejercicio_Integrador_Riesgo_Crediticio.ipynb
+└── README.md
+
+
+---
+
+## 🔗 Próximos pasos
+- [Visualización_avanzada_de_modelos](ca://s?q=Visualizacion_avanzada_de_modelos)
+- [Validacion_cruzada_y_generalizacion](ca://s?q=Validacion_cruzada_y_generalizacion)
+- [Comparacion_con_algoritmos_supervisados](ca://s?q=Comparacion_con_algoritmos_supervisados)
+
